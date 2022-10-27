@@ -1,7 +1,9 @@
+//DECLARATIONS: sequelize, db connection ----------------------------
 const { Model, DataTypes } = require('sequelize');
 
 const sequelize = require('../config/connection.js');
 
+//TAG MODEL ------------------------------------
 class Tag extends Model {}
 
 Tag.init(
@@ -25,4 +27,5 @@ Tag.init(
   }
 );
 
+//EXPORT TAG MODEL -------------------------
 module.exports = Tag;

@@ -1,7 +1,9 @@
+//DECLARATIONS: sequelize, db connection ----------------------------
 const { Model, DataTypes } = require('sequelize');
 
 const sequelize = require('../config/connection');
 
+//PRODUCT TAG MODEL --------------------------------------
 class ProductTag extends Model {}
 
 ProductTag.init(
@@ -36,4 +38,5 @@ ProductTag.init(
   }
 );
 
+//EXPORT MODEL ----------------------------------
 module.exports = ProductTag;
